@@ -1,6 +1,6 @@
 // Fonction pour inclure les fichiers HTML
 function includeHTML(id, file) {
-    fetch("../html/" + file)  // On ajuste le chemin pour accéder au fichier
+    fetch("../" + file)  // On ajuste le chemin pour accéder au fichier
         .then(response => response.text())
         .then(data => {
             document.getElementById(id).innerHTML = data;
